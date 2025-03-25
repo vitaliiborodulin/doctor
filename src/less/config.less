@@ -1,0 +1,130 @@
+// USER VARIABLES SECTION
+@white: #fff;
+@black: #000;
+@accent: #004482;
+
+
+
+@fontsize: 20px; // Body Font Size
+@lineheight: 1.4; // Document Line Height
+
+@userfont: 'Raleway', sans-serif;
+@systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// @font-face {
+//     font-family: 'Geologica';
+//     src: url('../fonts/GEOLOGICA_AUTO-EXTRALIGHT.eot');
+//     src: url('../fonts/GEOLOGICA_AUTO-EXTRALIGHT.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/GEOLOGICA_AUTO-EXTRALIGHT.woff2') format('woff2'),
+//         url('../fonts/GEOLOGICA_AUTO-EXTRALIGHT.woff') format('woff'),
+//         url('../fonts/GEOLOGICA_AUTO-EXTRALIGHT.ttf') format('truetype');
+//     font-weight: 200;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+.container {
+    .wrapper();
+}
+
+// ::placeholder {
+// 	color: fade(@black, 40%);
+// }
+
+::selection {
+	background-color: fade(@accent, 30%);
+	color: @black;
+}
+
+// input, textarea {
+// 	outline: none;
+// 	&:focus:required:invalid { border: 1px solid @accent2 }
+// 	&:required:valid { border: 1px solid green }
+// }
+
+
+// html, body {
+//     overflow-x: hidden;
+// }
+
+// html {
+//     scroll-behavior: smooth;
+// }
+
+body {
+    position: relative;
+    font-family: @userfont;
+    font-size: @fontsize;
+    line-height: @lineheight;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+ 
+    color: @black;
+    background-color: @white;
+    // text-rendering: optimizeSpeed;
+    // -webkit-font-smoothing: antialiased;
+    // text-rendering: optimizeLegibility;
+    // position: relative;
+    min-width: 320px;
+    // letter-spacing: -0.01em;
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+
+/* Наследуем шрифты для инпутов и кнопок */
+// input,
+// button,
+// textarea,
+// select {
+//   font: inherit;
+// }
+
+textarea {
+	resize: none;
+}
+
+// strong, b {
+//     font-weight: 700;
+// }
+
+// button {
+//     border: none;
+//     cursor: pointer;
+// }
+
+input, textarea { 
+    field-sizing: content; 
+}
+
+// служебные классы
+
+
+
+
+/* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+// Remove all mouse-triggered focus styles without breaking keyboard accessibility
+*:focus:not(:focus-visible) { 
+    outline: none !important; 
+}
+
+// fix safari
+input[type='submit'] { 
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none; 
+}

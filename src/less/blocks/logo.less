@@ -1,0 +1,26 @@
+.logo {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    .md(gap, 6px);
+
+    .custom-logo {
+        width: 85px;
+        height: auto;
+        
+        .md(width, 55px);
+    }
+    
+    .custom-logo-link {
+        flex-shrink: 0;
+    }
+
+    &__text {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1;
+
+        .md(font-size, 18px);
+    }
+}

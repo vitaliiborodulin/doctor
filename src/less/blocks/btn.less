@@ -1,0 +1,28 @@
+.btn {
+    display: inline-block;
+    padding: 27px 35px;
+
+    color: @white;
+    background-color: @accent;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+
+    text-align: center;
+    border-radius: 10px;
+
+    transition: background-color 0.5s ease;
+
+    .xs-block({
+        font-size: 14px;
+        padding: 14px 20px;
+    });
+   
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #719FA8;
+    }
+}

@@ -1,0 +1,94 @@
+.header {
+    // padding: 17px 0;
+    border-bottom: 1px solid #B0B0B0;
+
+    .md-block({
+        padding-top: 15px;
+        // padding-bottom: 36px;
+        padding-bottom: 15px;
+    });
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        padding: 19px 25px;
+        font-size: 18px;
+
+        .md-block({
+            font-size: 14px;
+            padding: 13px 18px;
+        });
+    }
+
+    &__menu {
+        .md(display, none);
+
+        ul {
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            position: relative;
+            width: 100%;
+            display: inline-block;
+            padding: 50px 23px;
+            transition: color 0.5s ease;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 4px;
+                top: 0;
+                left: 0;
+                border-radius: 2px;
+                background-color: @accent;
+                visibility: hidden;
+                transition: all 0.5s ease-in-out 0s;
+            }
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: @accent;
+            }
+        }
+    }
+
+    &__more {
+        display: flex;
+        gap: 10px;
+        align-items: stretch;
+        margin-left: auto;
+
+        select {
+            padding: 12px;
+            padding-right: 43px;
+            background: #E5FAFE url(../img/arrow-down-ac.svg) no-repeat 80% center;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            max-width: 89px;
+        }
+    }
+}
+
+.header__nav a:hover:before, 
+.header__nav li:hover > a:before, 
+.header__nav .active:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.header .burger {
+    margin-left: 7px;
+}
+
+.header .logo {
+    margin-right: auto;
+}
