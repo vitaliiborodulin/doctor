@@ -573,6 +573,57 @@ input[type='submit'] {
   max-width: 85%;
 }
 
+.page .page__lead {
+  margin: 0;
+  margin-top: 19px;
+}
+
+.page .btn {
+  margin-top: 30px;
+}
+
+.page__contacts {
+  margin-top: 15px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.page__contacts a {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  position: relative;
+  display: inline-block;
+  padding-left: 46px;
+  transition: color 0.5s ease;
+}
+
+.page__contacts a:hover {
+  color: #004482;
+}
+
+.page__contacts a::before {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: 6px;
+}
+
+.page__tel {
+  margin-right: 29px;
+}
+
+.page__tel::before {
+  background: url(../img/phone.svg) no-repeat center / contain;
+}
+
+.page__mail::before {
+  background: url(../img/mail.svg) no-repeat center / contain;
+}
+
 .articles {
   padding-bottom: 64px;
 }
@@ -637,6 +688,10 @@ input[type='submit'] {
   align-items: center;
 }
 
+.partners__item img {
+  max-width: 250px;
+}
+
 .partners__item:hover {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3);
 }
@@ -691,6 +746,19 @@ input[type='submit'] {
   padding: 15px 30px 6px;
   font-size: 20px;
   line-height: 1.4;
+}
+
+.press__hero .page__h1 {
+  margin-bottom: 19px;
+}
+
+.press__cards {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.press__cards .page__h1 {
+  margin-bottom: 28px;
 }
 
 .footer {
@@ -903,6 +971,31 @@ input[type='submit'] {
     font-size: 14px;
   }
 
+  .page .page__lead {
+    margin-top: 13px;
+  }
+
+  .page .btn {
+    margin-top: 17px;
+    width: 100%;
+  }
+
+  .page__contacts {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .page__contacts a {
+    padding-left: 31px;
+  }
+
+  .page__contacts a::before {
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+  }
+
   .articles {
     padding-bottom: 55px;
   }
@@ -956,6 +1049,19 @@ input[type='submit'] {
   .faq .answer {
     padding: 10px 30px;
     font-size: 14px;
+  }
+
+  .press__hero .page__h1 {
+    margin-bottom: 13px;
+  }
+
+  .press__cards {
+    padding-top: 33px;
+    padding-bottom: 35px;
+  }
+
+  .press__cards .page__h1 {
+    margin-bottom: 13px;
   }
 
   .footer {
