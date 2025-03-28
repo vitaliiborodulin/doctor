@@ -216,10 +216,6 @@ body {
   min-width: 320px;
 }
 
-main {
-  min-height: 100vh;
-}
-
 /* Наследуем шрифты для инпутов и кнопок */
 
 textarea {
@@ -229,6 +225,24 @@ textarea {
 input,
 textarea {
   field-sizing: content;
+}
+
+.accent {
+  color: #004482;
+}
+
+.bg-accent {
+  color: #fff;
+  background-color: #004482;
+}
+
+.m-auto {
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.tac {
+  text-align: center;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
@@ -265,13 +279,15 @@ input[type='submit'] {
 
 .btn {
   display: inline-block;
-  padding: 27px 35px;
+  padding: 25px 33px;
+  max-width: 100%;
   color: #fff;
   background-color: #004482;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
   text-align: center;
+  border: 2px solid #004482;
   border-radius: 10px;
   transition: background-color 0.5s ease;
 }
@@ -280,6 +296,19 @@ input[type='submit'] {
 .btn:active,
 .btn:focus {
   background-color: #719FA8;
+}
+
+.btn-o {
+  color: #004482;
+  background-color: #fff;
+}
+
+.btn-o:hover,
+.btn-o:active,
+.btn-o:focus {
+  color: #fff;
+  background-color: #004482;
+  border-color: #fff;
 }
 
 .burger {
@@ -386,7 +415,7 @@ input[type='submit'] {
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 34px 34px 36px;
   border: 1px solid #B0B0B0;
   border-radius: 30px;
@@ -550,16 +579,65 @@ input[type='submit'] {
   text-decoration: underline;
 }
 
+.home .how {
+  padding-bottom: 35px;
+}
+
+.home .what {
+  padding: 60px 0;
+}
+
+.home .what__content {
+  padding: 0;
+}
+
+.home .what .page__h1 {
+  margin-bottom: 10px;
+}
+
+.home .prescribing {
+  padding-top: 43px;
+  padding-bottom: 60px;
+}
+
+.home .prescribing .page__lead {
+  max-width: 1017px;
+}
+
+.home .press__cards {
+  padding-top: 45px;
+  padding-bottom: 39px;
+}
+
+.home .press__cards .card__descr {
+  margin-top: 23px;
+  font-size: 24px;
+}
+
+.home .press__cards-home-bottom {
+  padding-top: 60px;
+  padding-bottom: 68px;
+}
+
+.home .press__cards-home-bottom .page__h1 {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
 .page__hero {
   padding-bottom: 55px;
   border-bottom: 1px solid #B0B0B0;
 }
 
+.page__hero .btn {
+  margin-top: 30px;
+}
+
 .page__h1 {
+  margin-bottom: 25px;
   font-size: 48px;
   font-weight: 500;
   line-height: 1.4;
-  color: #000;
 }
 
 .page__h1 span {
@@ -625,6 +703,164 @@ input[type='submit'] {
   background: url(../img/mail.svg) no-repeat center / contain;
 }
 
+.how {
+  padding-top: 60px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #B0B0B0;
+}
+
+.how .page__h1 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.how__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+}
+
+.how__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.333333333333336% - 30px);
+  margin-bottom: 25px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #004482;
+}
+
+.how__item img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+.how__text {
+  text-align: center;
+}
+
+.how__title {
+  margin-bottom: 15px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.how__descr {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.what__content {
+  padding: 54px 58px 60px;
+  border-radius: 50px;
+  border-bottom-right-radius: 0;
+}
+
+.what__subtitle {
+  margin-bottom: 56px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.what__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: stretch;
+}
+
+.what__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(25% - 30px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.what__item picture {
+  width: 62px;
+  height: 62px;
+}
+
+.what__title {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.what__descr {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.what .btn {
+  margin-top: 33px;
+}
+
+.call {
+  padding: 60px 0;
+  border-top: 1px solid #B0B0B0;
+}
+
+.call .page__h1 {
+  margin-bottom: 14px;
+}
+
+.call__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: center;
+}
+
+.call__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(33.333333333333336% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call__img img {
+  width: 300px;
+}
+
+.call__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(66.66666666666667% - 30px);
+}
+
+.about .page__hero {
+  border-bottom: none;
+}
+
 .articles {
   padding-bottom: 64px;
 }
@@ -632,6 +868,10 @@ input[type='submit'] {
 .articles .page__h1 {
   margin-top: 15px;
   margin-bottom: 32px;
+}
+
+.articles .card {
+  margin-bottom: 30px;
 }
 
 .articles__more {
@@ -645,10 +885,6 @@ input[type='submit'] {
 .investor .page__lead {
   margin: 0;
   margin-top: 19px;
-}
-
-.investor .btn {
-  margin-top: 30px;
 }
 
 .partners {
@@ -754,7 +990,7 @@ input[type='submit'] {
 }
 
 .press__cards {
-  padding-top: 32px;
+  padding-top: 41px;
   padding-bottom: 30px;
 }
 
@@ -762,65 +998,17 @@ input[type='submit'] {
   margin-bottom: 28px;
 }
 
-.renew__how {
+.renew .how {
   padding-top: 59px;
-  padding-bottom: 38px;
+  padding-bottom: 13px;
 }
 
-.renew__how .page__h1 {
-  margin-bottom: 50px;
-  text-align: center;
+.renew .how .page__h1 {
+  margin-bottom: 49px;
 }
 
-.renew__how .page__h1 span {
+.renew .how .page__h1 span {
   display: block;
-}
-
-.renew__how-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  justify-content: center;
-}
-
-.renew__how-item {
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(33.333333333333336% - 30px);
-  margin-bottom: 25px;
-  padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #004482;
-}
-
-.renew__how-item img {
-  display: block;
-  width: 180px;
-  height: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-}
-
-.renew__how-text {
-  text-align: center;
-}
-
-.renew__how-title {
-  margin-bottom: 15px;
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-.renew__how-descr {
-  font-size: 20px;
-  line-height: 1.4;
 }
 
 .renew .faq {
@@ -835,7 +1023,6 @@ input[type='submit'] {
 .prescribing {
   padding: 60px 0;
   border-bottom: 1px solid #B0B0B0;
-  border-top: 1px solid #B0B0B0;
 }
 
 .prescribing .page__h1 {
@@ -844,6 +1031,14 @@ input[type='submit'] {
 
 .prescribing .page__lead {
   margin-bottom: 30px;
+}
+
+.care .page__hero {
+  border-bottom: none;
+}
+
+.care .what {
+  background-color: #fff;
 }
 
 .footer {
@@ -926,7 +1121,7 @@ input[type='submit'] {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .logo {
     gap: 6px;
   }
@@ -965,11 +1160,19 @@ input[type='submit'] {
     display: none;
   }
 
-  .partners__item {
+  .home .prescribing .page__lead {
+    max-width: 100%;
+  }
+
+  .how__item {
     width: calc(50% - 30px);
   }
 
-  .renew__how-item {
+  .what__item {
+    width: calc(50% - 30px);
+  }
+
+  .partners__item {
     width: calc(50% - 30px);
   }
 
@@ -1007,7 +1210,7 @@ input[type='submit'] {
 @media screen and (max-width: 576px) {
   .btn {
     font-size: 14px;
-    padding: 14px 20px;
+    padding: 12px 18px;
   }
 
   #breadcrumbs {
@@ -1045,11 +1248,61 @@ input[type='submit'] {
     width: 100%;
   }
 
+  .home .how {
+    padding-top: 34px;
+    padding-bottom: 18px;
+  }
+
+  .home .what {
+    padding-top: 36px;
+    padding-bottom: 45px;
+  }
+
+  .home .what .page__h1 {
+    margin-bottom: 6px;
+  }
+
+  .home .prescribing {
+    padding-top: 26px;
+    padding-bottom: 36px;
+  }
+
+  .home .press__cards {
+    padding-top: 27px;
+  }
+
+  .home .press__cards .card {
+    margin-bottom: 15px;
+  }
+
+  .home .press__cards .card__descr {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .home .press__cards-home-bottom {
+    padding: 35px 0;
+  }
+
+  .home .press__cards-home-bottom .page__h1 {
+    margin-bottom: 20px;
+  }
+
+  .home .press__cards-home-bottom .card {
+    margin-bottom: 15px;
+  }
+
   .page__hero {
     padding-bottom: 36px;
   }
 
+  .page__hero .btn {
+    margin-top: 17px;
+    width: 100%;
+  }
+
   .page__h1 {
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.3;
@@ -1085,6 +1338,106 @@ input[type='submit'] {
     height: 24px;
   }
 
+  .how {
+    padding: 30px 0;
+  }
+
+  .how__item {
+    width: calc(100% - 30px);
+  }
+
+  .how__item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .how__item img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 0;
+    margin-right: 13px;
+  }
+
+  .how__text {
+    text-align: left;
+  }
+
+  .how__title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .how__descr {
+    font-size: 14px;
+  }
+
+  .what__content {
+    padding: 36px 0 45px;
+  }
+
+  .what .page__h1 {
+    margin-bottom: 27px;
+  }
+
+  .what__subtitle {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .what__item {
+    width: calc(100% - 30px);
+  }
+
+  .what__item {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .what__item picture {
+    margin-right: 17px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+
+  .what__title {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .what__descr {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .what .btn {
+    margin-top: 7px;
+  }
+
+  .call {
+    padding-top: 56px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .call__img {
+    width: calc(100% - 30px);
+  }
+
+  .call__img img {
+    width: 130px;
+  }
+
+  .call__text {
+    width: calc(100% - 30px);
+  }
+
+  .call__text {
+    margin-top: 19px;
+  }
+
   .articles {
     padding-bottom: 55px;
   }
@@ -1094,6 +1447,10 @@ input[type='submit'] {
     margin-bottom: 20px;
   }
 
+  .articles .card {
+    margin-bottom: 15px;
+  }
+
   .articles__more {
     margin-top: 20px;
     width: 100%;
@@ -1101,11 +1458,6 @@ input[type='submit'] {
 
   .investor .page__lead {
     margin-top: 13px;
-  }
-
-  .investor .btn {
-    margin-top: 17px;
-    width: 100%;
   }
 
   .partners {
@@ -1153,46 +1505,17 @@ input[type='submit'] {
     margin-bottom: 13px;
   }
 
-  .renew__how {
-    padding: 30px 0;
+  .renew .how {
+    padding-top: 30px;
+    padding-bottom: 5px;
   }
 
-  .renew__how .page__h1 {
+  .renew .how .page__h1 {
     margin-bottom: 25px;
   }
 
-  .renew__how .page__h1 span {
+  .renew .how .page__h1 span {
     display: inline;
-  }
-
-  .renew__how-item {
-    width: calc(100% - 30px);
-  }
-
-  .renew__how-item {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .renew__how-item img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 0;
-    margin-right: 13px;
-  }
-
-  .renew__how-text {
-    text-align: left;
-  }
-
-  .renew__how-title {
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: 700;
-  }
-
-  .renew__how-descr {
-    font-size: 14px;
   }
 
   .renew .faq {
@@ -1215,6 +1538,10 @@ input[type='submit'] {
 
   .prescribing .page__lead {
     margin-bottom: 17px;
+  }
+
+  .care .what {
+    background-color: #004482;
   }
 
   .footer {
