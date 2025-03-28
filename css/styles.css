@@ -295,7 +295,8 @@ input[type='submit'] {
 .btn:hover,
 .btn:active,
 .btn:focus {
-  background-color: #719FA8;
+  color: #004482;
+  background-color: #fff;
 }
 
 .btn-o {
