@@ -49,7 +49,7 @@ $(function() {
     // 			submenu.removeClass('open').hide();
     // 	}
     // });
-    $('input[type="tel"]').mask("+7 (999) 999-99-99");
+    // $('input[type="tel"]').mask("+7 (999) 999-99-99");
     // $('input[name="birth"]').mask("99.99.9999");
     // $('.accordion__item:first-child').find('.accordion__header').addClass('active');
     // $('.accordion__item:first-child').find('.accordion__body').show();

@@ -17,7 +17,7 @@
 
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/styles.css?v=2">
+	<link rel="stylesheet" href="css/styles.css?v=3">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
 	                    <option value="en">En</option>
 	                    <option value="ru">Ru</option>
 	                </select>
-	                <a href="#" class="btn header__btn">Seek care</a>
+	                <a href="javascript:;" class="btn header__btn popup-link" data-src="#popup">Seek care</a>
 	           </div>
 	
 	           <button type="button" class="burger"><span></span></button>
@@ -153,16 +153,22 @@
 	    </div>
 	</footer>
 	<!-- end footer -->
-	<div style="display: none;" class="popup" id="buy-success">
-	    <div class="popup__title">Заказ оформлен</div>
-	    <div class="popup__subtitle">Менеджер свяжется с вами в ближайшее время</div>
+	<div style="display: none;" class="popup" id="popup">
+	    <form action="" class="form">
+	        <div class="popup__title">Have question? <span>Contuct us.</span></div>
+	        <div class="popup__subtitle">Fill out the form and our specialist will contact you within 15 minutes.</div>
+	        <input type="text" class="form__input" name="your-name" placeholder="Your name" required>
+	        <input type="tel" class="form__input" name="your-tel" placeholder="Phone number" required>
+	        <input type="email" class="form__input" name="your-email" placeholder="Email" required>
+	        <button type="submit" class="btn">Leave a request for a call</button>
+	    </form>
 	</div>
 	<!-- scripts -->
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/scripts.js?v=1"></script>
+	<script src="js/scripts.js?v=2"></script>
 	<!-- end scripts -->
 
 </body>
