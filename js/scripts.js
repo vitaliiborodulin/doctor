@@ -67,6 +67,11 @@ $(function() {
             answer.slideUp(300);
         }
     });
+    var options = {
+        valueNames: [ 'care', 'money' ]
+      };
+      
+      var priceList = new List('price-list', options);
     // $('[data-fancybox]').fancybox({
     //     // thumbs : { autoStart:true },
     //     toolbar: "auto",

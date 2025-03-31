@@ -245,6 +245,10 @@ textarea {
   text-align: center;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
 
 *:focus:not(:focus-visible) {
@@ -254,6 +258,25 @@ textarea {
 input[type='submit'] {
   -webkit-appearance: none;
   appearance: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
 
 .logo {
@@ -1132,6 +1155,28 @@ input[type='submit'] {
   line-height: 1.4;
 }
 
+.bg-accent .page__h1 {
+  color: #E5FAFE;
+}
+
+.bg-accent .question {
+  color: #000;
+  background-color: #fff;
+}
+
+.bg-accent .question.active {
+  color: #000;
+  background-color: #fff;
+}
+
+.bg-accent .question.active::after {
+  background: url(../img/arrow-down-ac.svg) no-repeat center;
+}
+
+.bg-accent .answer {
+  color: #E5FAFE;
+}
+
 .press__hero .page__h1 {
   margin-bottom: 19px;
 }
@@ -1186,6 +1231,141 @@ input[type='submit'] {
 
 .care .what {
   background-color: #fff;
+}
+
+.fees__faq {
+  padding-top: 80px;
+  padding-bottom: 54px;
+}
+
+.price {
+  padding-top: 50px;
+  padding-bottom: 88px;
+}
+
+.price .search-wrap {
+  position: relative;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 1px solid #004482;
+}
+
+.price .search-wrap img {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.price input[type=search] {
+  border: none;
+  outline: none;
+  padding: 24px 30px;
+  padding-right: 50px;
+  width: 100%;
+  color: #5D767B;
+  transition: box-shadow 0.5s ease;
+}
+
+.price #price-list table {
+  width: 100%;
+  margin-top: 29px;
+  border-spacing: 0;
+}
+
+.price #price-list th {
+  color: #E5FAFE;
+  background-color: #004482;
+  padding: 22px 30px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.price #price-list td.care,
+.price #price-list th:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.price #price-list td.money,
+.price #price-list th:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.price #price-list td.money {
+  white-space: nowrap;
+}
+
+.price #price-list tr:nth-child(odd) td {
+  background-color: #EEEEEE;
+}
+
+.price #price-list td {
+  padding: 22px 30px;
+  font-size: 20px;
+}
+
+.popup {
+  padding: 36px 33px 30px;
+  border-radius: 30px;
+}
+
+.popup__title {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+}
+
+.popup__title span {
+  display: block;
+  color: #004482;
+}
+
+.popup__subtitle {
+  margin-top: 11px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: center;
+}
+
+.popup .form__input {
+  margin-bottom: 12px;
+  display: block;
+  max-width: 348px;
+  border: 1px solid #B0B0B0;
+  font-size: 16px;
+}
+
+.popup .btn {
+  margin-top: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+#thanks {
+  padding: 47px 38px 45px;
+}
+
+#thanks svg {
+  display: inline-block;
+}
+
+#thanks .popup__title {
+  margin-top: 9px;
+  font-size: 40px;
+}
+
+#thanks .popup__title span {
+  display: inline;
+}
+
+#thanks .popup__subtitle {
+  font-size: 20px;
 }
 
 .footer {
@@ -1774,6 +1954,67 @@ input[type='submit'] {
 
   .care .what {
     background-color: #004482;
+  }
+
+  .fees__faq {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  .price .search-wrap img {
+    right: 15px;
+  }
+
+  .price input[type=search] {
+    font-size: 14px;
+    padding: 19px 20px;
+    padding-right: 39px;
+  }
+
+  .price #price-list table {
+    margin-top: 20px;
+  }
+
+  .price #price-list th {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .price #price-list td {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .popup {
+    padding: 19px 25px 23px;
+    border-bottom-right-radius: 0;
+  }
+
+  .popup__title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .popup__subtitle {
+    margin-top: 5px;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .popup .form__input {
+    margin-bottom: 10px;
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .popup .btn {
+    margin-top: 0;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .popup br {
+    display: none;
   }
 
   .footer {

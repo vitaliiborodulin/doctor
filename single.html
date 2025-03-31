@@ -135,7 +135,7 @@
 	                    <div class="logo__text">Doctor Budapest</div>
 	               </div>
 	               <div class="footer__links">
-	                    <a href="#">General terms and conditions</a> / <a href="#">Privacy policy</a>
+	                    <a href="single.html" target="_blank">General terms and conditions</a> / <a href="single.html" target="_blank">Privacy policy</a>
 	               </div>
 	            </div>
 	
@@ -176,19 +176,30 @@
 	<!-- end footer -->
 	<div style="display: none;" class="popup" id="popup">
 	    <form action="" class="form">
-	        <div class="popup__title">Have question? <span>Contuct us.</span></div>
-	        <div class="popup__subtitle">Fill out the form and our specialist will contact you within 15 minutes.</div>
+	        <div class="popup__title">Have a question? <span>Contact us.</span></div>
+	        <div class="popup__subtitle">Fill out the form and our specialist will <br> contact you within 15 minutes.</div>
 	        <input type="text" class="form__input" name="your-name" placeholder="Your name" required>
 	        <input type="tel" class="form__input" name="your-tel" placeholder="Phone number" required>
 	        <input type="email" class="form__input" name="your-email" placeholder="Email" required>
-	        <button type="submit" class="btn">Leave a request for a call</button>
+	        <!-- <button type="submit" class="btn">Leave a request for a call</button> -->
+	        <a href="javascript:;" class="btn popup-link w-100" data-src="#thanks">Leave a request for a call</a>
 	    </form>
+	</div>
+	
+	<div style="display: none;" class="popup tac" id="thanks" >
+	    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+	        <path d="M45.8346 23.083V24.9997C45.8321 29.4923 44.3773 33.8636 41.6874 37.4618C38.9975 41.0601 35.2165 43.6924 30.9083 44.9662C26.6001 46.24 21.9956 46.087 17.7814 44.5301C13.5673 42.9732 9.96933 40.0957 7.52414 36.3269C5.07894 32.5581 3.91753 28.0998 4.21313 23.617C4.50872 19.1342 6.24548 14.8671 9.16439 11.4519C12.0833 8.03683 16.0279 5.65675 20.41 4.66668C24.7921 3.6766 29.3769 4.12958 33.4805 5.95804" stroke="#004482" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+	        <path d="M45.8333 8.33334L25 29.1875L18.75 22.9375" stroke="#004482" stroke-width="4.16667" stroke-linecap="round" stroke-linejoin="round"/>
+	    </svg>
+	    <div class="popup__title">Thank <span>you!</span></div>
+	    <div class="popup__subtitle">Our specialists will contact you <br> within 15 minutes.</div>
 	</div>
 	<!-- scripts -->
 	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/list.min.js"></script>
 	<script src="js/scripts.js?v=2"></script>
 	<!-- end scripts -->
 
