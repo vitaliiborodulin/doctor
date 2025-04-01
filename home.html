@@ -17,10 +17,10 @@
 
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/styles.css?v=4">
+	<link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 
-<body>
+<body class="home">
 
 	<!-- header -->
 	<header class="header" id="header">
@@ -42,6 +42,7 @@
 	                        <li class="menu-item"><a href="#">Healthcare centers</a></li>
 	                        <li class="menu-item"><a href="renew.html">Prescription renewal</a></li>
 	                    </ul>
+	                    <a href="javascript:;" class="btn header__btn-m popup-link" data-src="#popup">Seek care</a>
 	                </nav>
 	           </div>
 	
@@ -61,9 +62,88 @@
 	</header>
 	<!-- end header -->
 
-	<main class="home">
+	<main >
 
-		home
+		<section class="hero">
+			<div class="container">
+
+				<div class="hero__content">
+
+					<div class="hero__text">
+						<h1 class="hero__title">Care online and <br>
+							at a clinic <span>near you</span></h1>
+							<ul class="hero__list">
+								<li>Help through chat or video within 30 min</li>
+								<li>Get appointment at the clinic within 24 h</li>
+								<li>Qualified and experienced health professionals</li>
+							</ul>
+							<div class="hero__btns">
+								<a href="care.html" class="btn">Seek care</a>
+								<a href="#" class="btn btn-o">Book a time at a clinic</a>
+							</div>
+					</div>
+
+					<div class="hero__pic">
+						<img src="img/home-hero-bg.png" alt="">
+					</div>
+
+					<ul class="advantage">
+
+						<li class="advantage__item">
+							<div class="advantage__content">
+								<div class="advantage__pic">
+									<img src="img/adv-1.svg" alt="">
+								</div>
+								<div class="advantage__info">
+									<div class="advantage__num "><span class="number" data-max="95">10</span>%</div>
+									<div class="advantage__descr">patient satisfaction</div>
+								</div>
+							</div>
+						</li>
+						<li class="advantage__item">
+							<div class="advantage__content">
+								<div class="advantage__pic">
+									<img src="img/adv-2.svg" alt="">
+								</div>
+								<div class="advantage__info">
+									<div class="advantage__num"><span class="number" data-max="26">1</span></div>
+									<div class="advantage__descr">healthcare centers</div>
+								</div>
+							</div>
+						</li>
+						<li class="advantage__item">
+							<div class="advantage__content">
+								<div class="advantage__pic">
+									<img src="img/adv-3.svg" alt="">
+								</div>
+								<div class="advantage__info">
+									<div class="advantage__num">+<span class="number" data-max="7">1</span></div>
+									<div class="advantage__descr">million care meetings</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="things bg-accent">
+			<div class="container">
+				<h2 class="page__h1">Most searched illnesses <br>
+					and conditions/symptoms right now</h2>
+				<div class="things__list">
+					<a href="#" class="things__item">Acne</a>
+					<a href="#" class="things__item">Skin problems</a>
+					<a href="#" class="things__item">Sore throat</a>
+					<a href="#" class="things__item">Medical certificates</a>
+					<a href="#" class="things__item">Contraceptive</a>
+					<a href="#" class="things__item">Urinary infection</a>
+				</div>
+			</div>
+		</section>
 
 		<section class="how">
 			<div class="container">
@@ -127,11 +207,24 @@
 			</div>
 		</section>
 
+		<section class="things">
+			<div class="container">
+				<h2 class="page__h1">At our health centers we offer, <span>among other things:</span></h2>
+				<div class="things__list">
+					<a href="#" class="things__item">BVC/Childcare centre</a>
+					<a href="#" class="things__item">Urgent Care</a>
+					<a href="#" class="things__item">Spot check</a>
+					<a href="#" class="things__item">Vaccination clinic</a>
+					<a href="#" class="things__item">Evening reception</a>
+				</div>
+			</div>
+		</section>
+
 		<section class="what bg-accent">
 			<div class="container">
 				<div class="what__content bg-accent">
 					<h2 class="page__h1 tac">Why Doktor Budapest?</h2>
-					<div class="what__subtitle tac">When you choose us as your healthcare center, you get, among other things:</div>
+					<div class="what__subtitle tac">When you choose us as your healthcare center, you get, <span>among other things:</span></div>
 
 					<ul class="what__list">
 						<li class="what__item">
@@ -305,7 +398,7 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/list.min.js"></script>
-	<script src="js/scripts.js?v=3"></script>
+	<script src="js/scripts.js?v=5"></script>
 	<!-- end scripts -->
 
 </body>
