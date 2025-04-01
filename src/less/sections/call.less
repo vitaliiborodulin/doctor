@@ -1,0 +1,45 @@
+.call {
+    padding: 60px 0;
+    border-top: 1px solid #B0B0B0;
+
+    .xs-block({
+        padding-top: 56px;
+        padding-bottom: 50px;
+        text-align: center;
+    });
+
+    .page__h1 {
+        margin-bottom: 14px;
+    }
+
+    &__content {
+        .row-flex();
+        align-items: center;
+    }
+
+    &__img {
+        .col();
+        .size(4);
+        .size-xs(12);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+        img {
+            width: 300px;
+            .xs(width, 130px);
+        }
+    }
+
+    &__text {
+        .col();
+        .size(8);
+        .size-xs(12);
+
+        .xs-block({
+            margin-top: 19px;
+        });
+    }
+}

@@ -1,0 +1,105 @@
+.price {
+    padding-top: 50px;
+    padding-bottom: 88px;
+
+    .search-wrap {
+        position: relative;
+        font-size: 20px;
+        border-radius: 15px;
+        border: 1px solid @accent;
+
+         img {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .xs-block({
+                right: 15px;
+            });
+         }
+    }
+        
+    input[type=search] {
+        border: none;
+        outline: none;
+        padding: 24px 30px;
+        padding-right: 50px;
+        width: 100%;
+        color: #5D767B;
+        transition: box-shadow 0.5s ease;
+
+        .xs-block({
+            font-size: 14px;
+            padding: 19px 20px;
+            padding-right: 39px;
+        });
+
+
+        // &::after {
+        //     position: absolute;
+        //     display: block;
+        //     content: '';
+        //     width: 24px;
+        //     height: 24px;
+        //     right: 0;
+        //     top: 0;
+        //     background: url(../img/search.svg) no-repeat center/contain;
+        // }
+    }
+
+    #price-list {
+        
+        table {
+            width: 100%;
+            margin-top: 29px;
+            border-spacing: 0;
+            .xs(margin-top, 20px);
+        }
+
+        th {
+            color: #E5FAFE;
+            background-color: @accent;
+            
+            padding: 22px 30px;
+            font-size: 27px;
+            font-weight: 700;
+
+            .xs-block({
+                padding: 14px 20px;
+                font-size: 14px;
+            });
+        }
+
+        td.care, th:first-child {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        td.money, th:last-child {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        td.money {
+            white-space: nowrap;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #EEEEEE;
+        }
+
+        td {
+            padding: 22px 30px;
+            font-size: 20px;
+
+            .xs-block({
+                padding: 14px 20px;
+                font-size: 14px;
+            });
+        }
+
+
+    }
+
+}

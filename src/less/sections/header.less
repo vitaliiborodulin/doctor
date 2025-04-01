@@ -3,9 +3,9 @@
     border-bottom: 1px solid #B0B0B0;
 
     .md-block({
-        padding-top: 15px;
+        padding-top: 11px;
         // padding-bottom: 36px;
-        padding-bottom: 15px;
+        padding-bottom: 11px;
     });
 
     &__content {
@@ -15,29 +15,76 @@
     }
 
     &__btn {
-        padding: 19px 25px;
+        padding: 19px 20px;
+        height: 60px;
         font-size: 18px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .md-block({
-            font-size: 14px;
-            padding: 13px 18px;
+            display: none;
+            // height: 42px;
+            // font-size: 14px;
+            // padding: 13px 18px;
+        });
+    }
+
+    &__btn-m {
+        display: none;
+
+        .md-block({
+            display: block;
+            z-index: 21;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            right: 0;
+            margin-left: 23px;
+            margin-right: 23px;
         });
     }
 
     &__menu {
-        .md(display, none);
+
+        .md-block({
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.97);
+            padding-top: 86px;
+        });
 
         ul {
             display: flex;
             align-items: center;
+        
+            .md-block({
+                flex-direction: column;
+                align-items: stretch
+            });
         }
 
-        a {
+        .menu-item a {
             position: relative;
             width: 100%;
             display: inline-block;
-            padding: 50px 23px;
+            // padding: 50px 23px;
+            padding: 46px 1vw;
+            font-size: 18px;
             transition: color 0.5s ease;
+
+            .md-block({
+                padding: 19px 23px 25px;
+                font-size: 14px;
+                color: @accent;
+                border-bottom: 1px solid #E2E2E2;
+            });
 
             &::before {
                 content: "";
@@ -60,11 +107,24 @@
         }
     }
 
+    &__nav {
+        position: relative;
+        // .md-block({
+        //     width: 100%;
+        //     height: 100%;
+        //     background: @white;
+        //     flex-direction: column;
+        // });
+    }
+
+
     &__more {
         display: flex;
         gap: 10px;
         align-items: stretch;
         margin-left: auto;
+
+        // .md(display, none);
 
         select {
             padding: 12px;
@@ -74,6 +134,13 @@
             outline: none;
             border-radius: 10px;
             max-width: 89px;
+            height: 60px;
+            font-size: 18px;
+
+            .md-block({
+                height: 42px;
+                font-size: 14px;
+            });
         }
     }
 }

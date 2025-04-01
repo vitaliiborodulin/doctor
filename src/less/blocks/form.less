@@ -1,0 +1,49 @@
+.form {
+
+    &__input-wrap {
+        display: flex;
+        gap: 24px;
+
+        .md-block({
+            flex-wrap: wrap;
+            gap: 0;
+        });
+    }
+
+    &__input {
+        width: 100%;
+        padding: 25px 30px;
+        font-size: 20px;
+        line-height: 1;
+        border-radius: 15px;
+        outline: none;
+        color: @black;
+        background-color: @white;
+
+        .xs-block({
+            padding: 12px 18px;
+            font-size: 14px;
+            border-radius: 10px;
+        });
+    }
+
+    .wpcf7-spinner {
+        display: none;
+    }
+
+    .wpcf7-not-valid-tip {
+        font-size: 14px;
+    }
+
+    .wpcf7-response-output {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+.form.bg-accent {
+    background: url(../img/form-bg.svg) no-repeat left bottom, @accent;
+}

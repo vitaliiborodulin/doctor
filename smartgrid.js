@@ -13,7 +13,7 @@ module.exports = {
 		// 	width: "992px",
 		// },
 		md: {
-			width: "768px",
+			width: "992px",
 			// fields: "40px"
 		},
 		xs: {

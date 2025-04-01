@@ -1,15 +1,126 @@
 .page {
 
+    &__hero {
+        padding-bottom: 55px;
+        border-bottom: 1px solid #B0B0B0;
+
+        .xs-block({
+            padding-bottom: 36px;
+        });
+
+        .btn {
+            margin-top: 30px;
+            
+            .xs-block({
+                margin-top: 17px;
+                width: 100%;
+            });
+        }
+    }
+
     &__h1 {
+        margin-bottom: 25px;
         font-size: 48px;
         font-weight: 500;
         line-height: 1.4;
-        color: @black;
+        // color: @black;
 
         .xs-block({
+            margin-bottom: 20px;
             font-size: 20px;
             font-weight: 700;
             line-height: 1.3;
         });
+
+        span {
+            color: @accent;
+        }
+    }
+
+    &__lead {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.5;
+        // max-width: 85%;
+
+        .xs-block({
+            // max-width: 100%;
+            font-size: 14px;
+        });
+    }
+
+    .page__lead {
+        margin: 0;
+        margin-top: 19px;
+        .xs(margin-top, 13px);
+    }
+
+    .btn {
+        margin-top: 30px;
+        
+        .xs-block({
+            margin-top: 17px;
+            width: 100%;
+        });
+    }
+
+    &__contacts {
+        margin-top: 15px;
+        font-size: 32px;
+        font-weight: 500;
+
+        .xs-block({
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: 700;
+        });
+
+        a {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            position: relative;
+            display: inline-block;
+            padding-left: 46px;
+            transition: color 0.5s ease;
+
+            .xs(padding-left, 31px);
+
+            &:hover {
+                color: @accent;
+            }
+
+            &::before {
+                position: absolute;
+                display: block;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 32px;
+                height: 32px;
+                margin-top: 6px;
+
+                .xs-block({
+                    margin-top: 3px;
+                    width: 24px;
+                    height: 24px;
+                });
+            }
+        }
+    }
+
+    &__tel {
+        margin-right: 29px;
+        // .xs(margin-right, 0);
+
+        &::before {
+            background: url(../img/phone.svg) no-repeat center/contain;
+        }
+    }
+
+    &__mail {
+        &::before {
+            background: url(../img/mail.svg) no-repeat center/contain;
+        }
     }
 }

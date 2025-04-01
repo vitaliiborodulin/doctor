@@ -1,6 +1,7 @@
 .btn {
     display: inline-block;
-    padding: 27px 35px;
+    padding: 25px 30px;
+    max-width: 100%;
 
     color: @white;
     background-color: @accent;
@@ -10,19 +11,34 @@
     line-height: 1;
 
     text-align: center;
+    border: 2px solid @accent;
     border-radius: 10px;
 
     transition: background-color 0.5s ease;
 
     .xs-block({
         font-size: 14px;
-        padding: 14px 20px;
+        padding: 12px 18px;
     });
    
 
     &:hover,
     &:active,
     &:focus {
-        background-color: #719FA8;
+        color: @accent;
+        background-color: @white;
+    }
+}
+
+.btn-o {
+    color: @accent;
+    background-color: @white;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: @white;
+        background-color: @accent;
+        border-color: @white;
     }
 }

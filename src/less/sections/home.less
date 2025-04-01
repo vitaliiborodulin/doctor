@@ -1,5 +1,211 @@
 .home {
 
-   
+    .header {
+        border-bottom: unset;
+    }
+
+    .hero {
+        padding-bottom: 128px;
+        background: url(../img/hero-bg.svg) no-repeat left bottom;
+        .md(background, none);
+        .xs(padding-bottom, 50px);
+
+        &__content {
+            .row-flex();
+            position: relative;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        &__pic {
+            .col();
+            .size(6);
+            .md(display, none);
+
+            img {
+                margin-top: -40px;
+            }
+        }
+
+        &__text {
+            .col();
+            .size(6);
+            .size-md(12);
+            padding: 25px 0;
+            // flex-shrink: 0;
+            min-width: 630px;
+
+            .md-block({
+                min-width: auto;
+            })
+        }
+
+        br {
+            .xs(display, none);
+        }
+
+        &__title {
+            margin-bottom: 53px;
+            font-size: 68px;
+            line-height: 1;
+            font-weight: 500;
+
+            .xs-block({
+                margin-bottom: 23px;
+                font-size: 40px;
+            });
+
+            span {
+                color: @accent;
+            }
+        }
+
+        &__list {
+            
+            li {
+                font-size: 24px;
+                line-height: 1;
+                position: relative;
+                margin-bottom: 29px;
+                padding-left: 47px;
+
+                .xs-block({
+                    margin-bottom: 14px;
+                    padding-left: 40px;
+                    font-size: 15px;
+                    max-width: 60%;
+                });
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    width: 36px;
+                    height: 36px;
+                    margin-top: -6px;
+
+                    .xs-block({
+                        width: 32px;
+                        height: 32px;
+                        margin-top: 0;
+                    });
+                }
+                
+                &:nth-child(1)::after {
+                    background: url(../img/hero-list-1.svg) no-repeat center;
+                }
+                &:nth-child(2)::after {
+                    background: url(../img/hero-list-2.svg) no-repeat center;
+                }
+                &:nth-child(3)::after {
+                    background: url(../img/hero-list-3.svg) no-repeat center;
+                }
+            }
+        }
+
+        &__btns {
+            display: flex;
+            gap: 15px;
+            margin-top: 50px;
+
+            .xs-block({
+                margin-top: 29px;
+            });
+        }
+    }
+
+    .advantage {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -128px;
+        transform: translateY(50%);
+        .xs(bottom, -50px);
+    }
+
+  .how {
+    padding-bottom: 35px;
+
+    .xs-block({
+        padding-top: 34px;
+        padding-bottom: 18px;
+    });
+  }
+
+  .what {
+    padding: 60px 0;
+
+    .xs-block({
+        padding-top: 36px;
+        padding-bottom: 45px;
+    });
+
+    &__content {
+        padding: 0;
+    }
+
+    .page__h1 {
+        margin-bottom: 10px;
+        .xs(margin-bottom, 6px);
+    }
+  }
+
+  .prescribing {
+    padding-top: 43px;
+    padding-bottom: 60px;
+
+    .xs-block({
+        padding-top: 26px;
+        padding-bottom: 36px;
+    });
+
+    .page__lead {
+        max-width: 1017px;
+        .md(max-width, 100%);
+    }
+  }
+
+  .press__cards {
+    padding-top: 45px;
+    padding-bottom: 39px;
+
+    .xs-block({
+        padding-top: 27px;
+    });
+
+    .card {
+        .xs(margin-bottom, 15px);
+    }
+
+    .card__descr {
+        margin-top: 23px;
+        font-size: 24px;
+
+        .xs-block({
+            margin-top: 15px;
+            font-size: 14px;
+        });
+    }
+  }
+
+  .press__cards-home-bottom {
+    padding-top: 60px;
+    padding-bottom: 68px;
+
+    .xs-block({
+        padding: 35px 0;
+    });
+
+    .page__h1 {
+        margin-bottom: 38px;
+        text-align: center;
+        .xs(margin-bottom, 20px);
+    }
+
+    .card {
+        .xs(margin-bottom, 15px);
+    }
+  }
 
 }
